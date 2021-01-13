@@ -38,5 +38,9 @@ def check_hash(_hash):
 
 
 if __name__ == '__main__':
-    myhash = get_hashword()
-    check_hash(myhash)
+
+    exit_flag = ""
+    while exit_flag.lower() != "exit":
+        myhash = get_hashword()
+        check_hash(myhash)
+        exit_flag = input("Press any button to continue, or type \"exit\" to quit: ")
